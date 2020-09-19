@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const tblPibRes = new Schema({
+const tblPibResSchema = new Schema({
     CAR: String,
     RESKD: String,
     RESTG: Date,
@@ -40,6 +40,6 @@ const tblPibRes = new Schema({
 }, {timestampts:true})
 
 
-mongoose.model('TblPibRes', tblPibRes);
+const tblPibRes = mongoose.model('tblPibRes', tblPibResSchema);
 
 module.exports = tblPibRes

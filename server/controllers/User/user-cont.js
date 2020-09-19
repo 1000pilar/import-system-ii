@@ -1,10 +1,10 @@
-const User = require('../models/UserTables/tblUser.js');
+const User = require('../../models/UserTables/tblUser.js');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
-const Key = require('../SECRET_THING/key.js')
+const Key = require('../../../SECRET_THING/key.js')
 
 module.exports = {
-    signUp : (req, res)=>{
+    signUp: (req, res)=>{
         var createUser = new User({
         name: req.body.name,
         username: req.body.username,

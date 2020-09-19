@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 const Schema = mongoose.Schema;
 
 
-const tblPibHdr = new Schema({
+const tblPibHdrSchema = new Schema({
     CAR: String,
     KdKpbc: String,
     PibNo: String,
@@ -86,6 +86,6 @@ const tblPibHdr = new Schema({
 }, {timestampts:true})
 
 //boolean clearance payment cek qty total.
-mongoose.model('TblPibHdr', tblPibHdr);
+const tblPibHdr = mongoose.model('tblPibHdr', tblPibHdrSchema);
 
 module.exports = tblPibHdr

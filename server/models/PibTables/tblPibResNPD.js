@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const tblPibResNPD = new Schema({
+const tblPibResNPDSchema = new Schema({
     CAR: String,
     ResTg: Date,
     ResWk: String,
@@ -12,6 +12,6 @@ const tblPibResNPD = new Schema({
 }, {timestampts:true})
 
 
-mongoose.model('TblPibResNPD', tblPibResNPD);
+const tblPibResNPD = mongoose.model('tblPibResNPD', tblPibResNPDSchema);
 
 module.exports = tblPibResNPD

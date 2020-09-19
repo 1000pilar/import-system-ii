@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const tblPibKendaraan = new Schema({
+const tblPibKendaraanSchema = new Schema({
     CAR: String,
     Serial: String,
     NoRangka: String,
@@ -13,6 +13,6 @@ const tblPibKendaraan = new Schema({
 }, {timestampts:true})
 
 
-mongoose.model('TblPibKendaraan', tblPibKendaraan);
+const tblPibKendaraan = mongoose.model('tblPibKendaraan', tblPibKendaraanSchema);
 
 module.exports = tblPibKendaraan

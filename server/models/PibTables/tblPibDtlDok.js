@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const tblPibDtlDok = new Schema({
+const tblPibDtlDokSchema = new Schema({
     CAR: String,
     Serial: String,
     KdFasDtl: String,
@@ -15,6 +15,6 @@ const tblPibDtlDok = new Schema({
 }, {timestampts:true})
 
 
-mongoose.model('TblPibDtlDok', tblPibDtlDok);
+const tblPibDtlDok = mongoose.model('tblPibDtlDok', tblPibDtlDokSchema);
 
 module.exports = tblPibDtlDok
