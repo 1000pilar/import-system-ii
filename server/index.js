@@ -2,10 +2,16 @@ const express = require('express');
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const port = 3000
+const portConnectTo = require('./helpers/portConnection')
 const mongoose = require('mongoose')
+const mdb = require('mdb-parse')
 
-mongoose.connect('mongodb://localhost/import_database', {useNewUrlParser: true, 
+
+const cbu_4w_database = new mdb('./sample database/cbu_4w.mdb')
+
+
+
+mongoose.connect(portConnectTo.databaseConnection, {useNewUrlParser: true, 
 useUnifiedTopology: true});
 
 const db = mongoose.connection;
@@ -15,12 +21,19 @@ db.once('open', function(){
     console.log('Import Database Connection Succesfuly');
 })
 
+var tables = cbu_4w_database.list()
+
+console.log(tables)
+
+var content = cbu_4w_database.table('tblPibDtl')
+
+console.log(Number(content[1].DNilInv))
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-app.get('/*', (req, res)=>{res.send('Fahri Goreng')});
+app.get('/home', (req, res)=>{res.send('Fahri Goreng')});
 
 
-app.listen(port, ()=> console.log(`we are online ${port}`));
+app.listen(portConnectTo.serverConnection, ()=> console.log(`we are online ${portConnectTo.serverConnection}`));
