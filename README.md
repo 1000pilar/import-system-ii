@@ -12,4 +12,5 @@ make it simple and clean
 ### React 
 ### Recharts
 Library for Set the chart
-###
+### Write File to JSON
+Using fs(file System) 
