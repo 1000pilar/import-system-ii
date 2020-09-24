@@ -1,0 +1,13 @@
+function myFunction() {
+  var str = "The"; 
+  var gabung = str.split(" ").join("")
+  var res = gabung.search(/ain/gi);
+  
+  
+  if (res > 0) {
+ 	 document.getElementById("demo").innerHTML = res;
+     }
+  else {
+  	document.getElementById("demo").innerHTML = "There is no string you serching for";
+  }
+}
