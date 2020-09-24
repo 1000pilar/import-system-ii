@@ -1,3 +1,5 @@
+/// search type of CBU 4W and other
+
 function myFunction() {
   var str = "The"; 
   var gabung = str.split(" ").join("")
@@ -11,3 +13,29 @@ function myFunction() {
   	document.getElementById("demo").innerHTML = "There is no string you serching for";
   }
 }
+
+// To update/upsert a document inside MongoDB you can use the below-mentioned method, Mongoose now supports this natively with findOneAndUpdate (calls MongoDB //findAndModify).
+
+//The upsert = true option creates the object if it doesn't exist. defaults to false.
+
+
+    var query = {'username':req.user.username}; 
+
+    req.newData.username = req.user.username; MyModel.findOneAndUpdate(query, req.newData, {upsert:true}, function(err, doc){ 
+
+    if (err) return res.send(500, { error: err }); 
+
+    return res.send("succesfully saved"); 
+
+    });
+    
+    
+    //continue statement
+    var text = "";
+    var i;
+    for (i = 0; i < 5; i++) {
+      if (i === 3) {
+      continue;
+      }
+      text += "The number is " + i + "<br>";
+    }
