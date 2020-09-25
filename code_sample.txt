@@ -39,3 +39,106 @@ function myFunction() {
       }
       text += "The number is " + i + "<br>";
     }
+
+
+
+  
+  
+  for ( i=0; i>tblPibHdrUpload.length; i++){
+    var newHdr = {
+    CAR: req.body.CAR,
+    KdKpbc: req.body.KdKpbc,
+    PibNo: req.body.PibNo,
+    PibTg: req.body.PibTg,
+    JnPib: req.body.JnPib,
+    JnImp: req.body.JnImp,
+    JkWaktu: req.body.JkWaktu,
+    CrByr: req.body.CrByr,
+    DokTupKd: req.body.DokTupKd,
+    DokTupNo: req.body.DokTupNo,
+    DokTupTg: req.body.DokTupTg,
+    PosNo: req.body.PosNo,
+    PosSub: req.body.PosSub,
+    PosSubSub: req.body.PosSubSub,
+    ImpId: req.body.ImpId,
+    ImpNpwp: req.body.ImpNpwp,
+    ImpNama: req.body.ImpNama,
+    ImpAlmt: req.body.ImpAlmt,
+    ImpStatus: req.body.ImpStatus,
+    ApiKd: req.body.ApiKd,
+    ApiNo: req.body.ApiNo,
+    PpjkId: req.body.PpjkId,
+    PpjkNpwp: req.body.PpjkNpwp,
+    PpjkNama: req.body.PpjkNama,
+    PpjkAlmt: req.body.PpjkAlmt,
+    PpjkNo: req.body.PpjkNo,
+    PpjkTg: req.body.PpjkTg,
+    IndId: req.body.IndId,
+    IndNpwp: req.body.Npwp,
+    IndNama: req.body.IndNama,
+    IndAlmt: req.body.IndAlmt,
+    PasokNama: req.body.PasokNama,
+    PasokAlmt: req.body.PasokAlmt,
+    PasokNeg: req.body.PasokNeg,
+    PelBkr: req.body.PelBkr,
+    PelMuat: req.body.PelMuat,
+    PelTransit: req.body.PelTransit,
+    TmpTbn: req.body.TmpTbn,
+    Moda: req.body.Moda,
+    AngkutNama: req.body.AngkutNama,
+    AngkutNo: req.body.AngkutNo,
+    AngkutFl: req.body.AngkutFl,
+    TgTiba: TgTiba,
+    KdVal: req.body.KdVal,
+    Ndpbm: req.body.Ndpbm,
+    NilInv: req.body.NillInv,
+    Freight: req.body.Freight,
+    BTambahan: req.body.BTambahan,
+    Diskon: req.body.Diskon,
+    KdAss: req.body.KdAss,
+    Asuransi: req.body.Asuransi,
+    KdHrg: req.body.KdHrg,
+    Fob: req.body.Fob,
+    Cif: req.body.Cif,
+    Bruto: req.body.Bruto,
+    Netto: req.body.Netto,
+    JmCont: req.body.JmCont,
+    JmBrg: req.body.JmBrg,
+    Status: req.body.Status,
+    Snrf: req.body.Snrf,
+    KdFas: req.body.Kdfas,
+    Lengkap: req.body.Lengkap,
+    BillNpwp: req.body.BillNpwp,
+    BillNama: req.body.BillNama,
+    BillAlmt: req.body.BillAlmt,
+    PenjualNama: req.body.PenjualNama,
+    PenjualAlmt: req.body.PenjualAlmt,
+    PenjualNeg: req.body.PenjualNeg,
+    Pernyataan: req.body.Pernyataan,
+    JnsTrans: req.body.JnsTrans,
+    VD: req.body.VD,
+    VersiModul: req.body.VersiModul,
+    NilVd: NillVd,
+    commodity: req.body.commodity,
+    typeOfShipment: req.body.typeOfShipment,
+    clearancePaymentStatus: req.body.clearancePaymentStatus || false,
+    clearancePayments4W: req.body.clearancePayments4W || null,
+    clearancePaymentsFCL: req.body.clearancePaymentsFCL || null,
+    clearancePaymentsLCL: req.body.clearancePaymentsLCL|| null,
+    clearancePaymentsAir: req.body.clearancePaymentsLCL || null,
+    remmitanceStatus: req.body.remmitanceStatus || false,
+    userHistory: req.body.userHistory || null
+    }
+  
+    var query: {
+      CAR: req.body.CAR
+    }
+    var newPib = tblPibHdr.findOneAndUpdate(query, newHdr, {upsert: true}, (err, HdrData)=>{
+    if(!err){
+      console.log(`data CAR ${HdrData.CAR} insert succesfull`)
+      //call other function for loop other table update (temporary strategy using "tblPibHdrUpload[i].CAR == otherPibTableUpload[i].CAR")
+    } else {
+      console.log(`data CAR ${tblPibHdrUpload[i].CAR} Already Exist`)
+      continue
+    }
+  }
