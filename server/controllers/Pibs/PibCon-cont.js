@@ -12,4 +12,10 @@
 
 
 const pibHdr = require('../../models/PibTables/tblPibHdr.js')
-const 
+
+
+// module.exports = {
+//     create: (req, res){
+//         pibHdr.create()
+//     }
+// }
