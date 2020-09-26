@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { ObjectId } = require('mongodb');
 const Schema = mongoose.Schema;
 
 
@@ -9,7 +10,8 @@ const tblPibKendaraanSchema = new Schema({
     NoMesin: String,
     Silinder: String,
     Tahun: String,
-    FlagCbu: String
+    FlagCbu: String,
+    policeRegId:{type:ObjectId, ref:'tblAForm'}
 }, {timestampts:true})
 
 

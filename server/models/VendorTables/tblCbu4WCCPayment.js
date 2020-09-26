@@ -1,9 +1,11 @@
 const mongoose  = require('mongoose')
 const Schema = mongoose.Schema
 
-const tblCbu4wCCPaymentModel = new Schema({
+const tblCbu4wCCPaymentSchema = new Schema({
     _id: Schema.Types.ObjectId,
     invoice_number: String,
+    shipment_type: String,
+    shipment_term: String,
     escort_qty: Number,
     escort_amount: Number,
     edi_basic_desc: String,
@@ -24,6 +26,9 @@ const tblCbu4wCCPaymentModel = new Schema({
     inland_transp_desc: String,
     inland_transp_qty: Number,
     inland_transp_amount: Number,
+    inland_transp2_desc: String,
+    inland_transp2_qty: Number,
+    inland_transp2_amount: Number,
     storage_qty: Number,
     storage_amount: Number,
     stepdooring_qty: Number,
@@ -40,11 +45,12 @@ const tblCbu4wCCPaymentModel = new Schema({
     other_expand_4_desc: String,
     other_expand_4_qty: Number,
     other_expand_4_amount: Number,
+    tax: Number,
     total_invoice_amount: Number,
     create_by:{name: String, company: String}
 }, {timestamps:true})
 
-mongoose.model('TblCbu4wCCPaymentModel', tblCbu4wCCPaymentModel);
+const tblCbu4wCCPayment = mongoose.model('tblCbu4wCCPayment', tblCbu4wCCPaymentSchema);
 
-module.exports = tblCbu4wCCPaymentModel
+module.exports = tblCbu4wCCPayment
 

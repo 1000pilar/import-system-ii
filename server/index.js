@@ -10,11 +10,15 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local');
 const router = require('./routes/Users/user_routes');
 const User = require('./models/UserTables/tblUser.js')
+const bcrypt = require('bcrypt')
 const userRoutes = require('./routes/Users/user_routes')
 
 
-const cbu_4w_database = new mdb('./sample database/cbu_4w.mdb')
 
+const cbu_4w_database = new mdb('./sample database/cbu_4w.mdb')
+const formAPib373446 = require('../sample database/formAPib373446.json')
+
+// console.log(formAPib373446.data[1 ])
 
 
 mongoose.connect(portConnectTo.databaseConnection, {useNewUrlParser: true, 
@@ -29,6 +33,7 @@ db.once('open', function(){
 
 passport.use(new LocalStrategy(
     function (username, password, done){
+      // console.log(username)
       User.findOne({username: username}, function(err, user){
         if (err) { return done(err); }
         if (!user) { return done(null, {message: `username or password invalid`}); }
@@ -40,11 +45,11 @@ passport.use(new LocalStrategy(
 
 var tables = cbu_4w_database.list()
 
-console.log(tables)
+// console.log(tables)
 
-var content = cbu_4w_database.table('tblPibDtl')
+var content = cbu_4w_database.table('tblPibHdr')
 
-console.log(content)
+// console.log(content[1])
 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }))

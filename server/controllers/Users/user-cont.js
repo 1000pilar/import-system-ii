@@ -2,6 +2,7 @@ const User = require('../../models/UserTables/tblUser.js');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const Key = require('../../../SECRET_THING/key.js')
+const KeyforJson = Key.jsonSecretKey //remember string must be store in the variable
 
 module.exports = {
     signUp: (req, res)=>{
@@ -26,35 +27,35 @@ module.exports = {
     },
     signIn : (req, res)=>{
         var user = req.user
-        console.log(`aku sampai disini`);
+        // console.log(`aku sampai disini`);
         if(user.hasOwnProperty('message')) {
-            res.send(user)
+          res.send(user)
         } else {
-            var token = jwt.sign({
+          var token = jwt.sign({
             name: user.name,
             id: user._id,
             role: user.role
-            },
-            Key.jsonSecratKey,
-            { expiresIn: '3h'
-            }, (err, token)=>{
-                if (!err){
-                    jwt.verify(token, Key.jsonSecratKey, (err, decoded)=>{
-                        if(!err) {
-                            console.log(`aku sampai didalam decode`);
-                            res.send({token: token, name:decoded.name, role: decoded.role, id:decoded.id})
-                        } else {
-                            console.log(`ada yang ga beres sama tokennya`);
-                        }
-                    })
+          },
+          KeyforJson,
+          { expiresIn: '1h'
+          }, (err, token)=>{
+            if (!err){
+              jwt.verify(token, KeyforJson, (err, decoded)=>{
+                if(!err) {
+                //   console.log(`aku sampai didalam`);
+                  res.send({token: token, name:decoded.name, role: decoded.role, id:decoded.id})
                 } else {
-                res.send(err)
+                //   console.log(`ada yang ga beres sama tokennya`);
                 }
-            })
+              })
+            } else {
+              res.send(err)
+            }
+          })
         }
     },
     getOneUser : (req, res)=>{
-        User.findOne({username: req.body.username}, (err, user)=>{
+        User.findOne({username: req.params.username}, (err, user)=>{
             if(err){
                 res.send({errmsg:'username not found'})
             } else{
@@ -72,7 +73,7 @@ module.exports = {
           })
     },
     updateUser : (req, res)=>{
-        User.findOneAndUpdate({username:req.body.username}, {$set:{username:req.body.username, password: bcrypt.hashSync(req.body.password, 10)}}).exec((err, user)=>{
+        User.findOneAndUpdate({username:req.params.username}, {$set:{username:req.body.username, password: bcrypt.hashSync(req.body.password, 10), role:req.body.role, }}).exec((err, user)=>{
             if(err){
                 res.send({errmsg:'update user failed'})
             } else {
@@ -81,7 +82,7 @@ module.exports = {
         })
     },
     deleteOneUser : (req, res)=>{
-        User.findOneAndRemove({username:req.body.username}, (err, user)=>{
+        User.findOneAndRemove({username:req.params.username}, (err, user)=>{
             if(err){
                 res.send({errmsg:'username not found'})
             } else {

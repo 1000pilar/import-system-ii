@@ -80,7 +80,7 @@ const tblPibHdrSchema = new Schema({
     commodity: String,
     typeOfShipment: String,
     clearancePaymentStatus: Boolean,
-    clearancePayments: [{type: ObjectId, ref:'TblCbu4wCCPaymentModel'}],
+    clearancePayments: [{type: ObjectId, ref:'tblCbu4wCCPayment'}, {type: ObjectId, ref:'tblFclCCPayment'}, {type: ObjectId, ref:'tblLclCCPayment'}, {type: ObjectId, ref:'tblAirCCPayment'}],
     remmitanceStatus: Boolean,
     userHistory:[]
 }, {timestampts:true})

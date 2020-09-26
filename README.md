@@ -8,3 +8,5 @@ create Restful API
 ### Controller
 make it simple and clean
 ## Frontend
+
+// "start": "babel-node -- server/index.js"
