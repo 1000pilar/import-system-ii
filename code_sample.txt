@@ -170,3 +170,6 @@ function myFunction() {
       }
    }
   
+
+
+added filed commodity check boolean & compare with commodity detail (just take index[1].commodity with CAR reference
