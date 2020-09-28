@@ -210,3 +210,6 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+
+
+//for tpt please remember to considering stock by import and by sales
