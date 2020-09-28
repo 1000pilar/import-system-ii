@@ -142,3 +142,15 @@ function myFunction() {
       continue
     }
   }
+  
+  // Create commodity criteria with hs code filter
+  
+  - added CBU 4W HS code filter
+    8701.20;8702;8703;8704;8705;
+  - added CBU OBM HS code filter
+    8407.21
+  - added CBU 2W HS code filter
+    8711
+  - other (sparepart)
+  
+  
