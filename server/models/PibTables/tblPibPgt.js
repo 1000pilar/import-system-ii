@@ -7,7 +7,8 @@ const tblPibPgtSchema = new Schema({
     KdBeban: String,
     KdFasil: String,
     NilBeban: Number,
-    Npwp: String
+    Npwp: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

@@ -11,10 +11,11 @@ const tblPibResNPBLSchema = new Schema({
     BrgUrai: String,
     ketentuan: String,
     pemberitahuan: String,
-    Penetapan: String
+    Penetapan: String,
+    CombineKey: String
 }, {timestampts:true})
 
 
-const tblPibResNPBL = mongoose.model('tblPibResNPBL', tblPibResNPBLSchema);
+const tblPibResNPBL = mongoose.model('TblPibResNPBL', tblPibResNPBLSchema);
 
 module.exports = tblPibResNPBL

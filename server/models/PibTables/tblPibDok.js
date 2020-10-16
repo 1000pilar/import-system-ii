@@ -9,7 +9,8 @@ const tblPibDokSchema = new Schema({
     DokTg: Date,
     DokInst: String,
     NoUrut: String,
-    KdGroupDok: String
+    KdGroupDok: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

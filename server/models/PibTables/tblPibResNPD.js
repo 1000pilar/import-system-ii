@@ -8,7 +8,8 @@ const tblPibResNPDSchema = new Schema({
     ResWk: String,
     Seri: String,
     UrDok: String,
-    NILAI: Number
+    NILAI: Number,
+    CombineKey: String
 }, {timestampts:true})
 
 

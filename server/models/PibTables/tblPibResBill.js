@@ -11,6 +11,6 @@ const tblPibResBillSchema = new Schema({
     Nilai: Number
 }, {timestampts:true})
 
-const tblPibResBill = mongoose.model('tblPibResBill', tblPibResBillShema);
+const tblPibResBill = mongoose.model('tblPibResBill', tblPibResBillSchema);
 
 module.exports = tblPibResBill

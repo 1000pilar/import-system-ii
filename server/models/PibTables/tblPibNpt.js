@@ -66,7 +66,8 @@ const tblPibNptSchema = new Schema({
     BMKT_Asal:Number,
     BMKT: Number,
     BMKT_KURANG: Number,
-    BMKT_Lebih: Number
+    BMKT_Lebih: Number,
+    CombineKey: String
 }, {timestampts:true})
 
 

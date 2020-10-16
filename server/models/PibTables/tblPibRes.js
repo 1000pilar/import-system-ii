@@ -36,7 +36,8 @@ const tblPibResSchema = new Schema({
     TanggalJtTempo: Date,
     TanggalAju: Date,
     TotalBayar: Number,
-    Terbilang: String
+    Terbilang: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

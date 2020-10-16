@@ -26,7 +26,8 @@ const tblPibFasSchema = new Schema({
     BMIMS: String,
     KdFasBMPB: String,
     FasBMPB: Number,
-    BMPBS: String
+    BMPBS: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

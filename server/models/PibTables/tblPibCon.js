@@ -6,7 +6,8 @@ const tblPibConModelSchema = new Schema({
     CAR: String,
     ContNo: String,
     ContUkur: String,
-    ContTipe: String
+    ContTipe: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

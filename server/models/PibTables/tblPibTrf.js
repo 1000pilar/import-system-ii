@@ -29,7 +29,8 @@ const tblPibTrfSchema = new Schema({
     KdKmsCuk: String,
     IsiPerKmsCuk: Number,
     FlagTis: String,
-    FlagLekat: String
+    FlagLekat: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

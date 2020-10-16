@@ -1,6 +1,6 @@
 
 const connectTo = {
-    serverConnection: 3000,
+    serverConnection: 8080,
     databaseConnection: 'mongodb://localhost/import_database'
 }
 

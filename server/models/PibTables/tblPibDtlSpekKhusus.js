@@ -6,10 +6,11 @@ const tblPibDtlSpekKhususSchema = new Schema({
     CAR: String,
     Serial: String,
     CAS1: String,
-    CAS2: String
+    CAS2: String,
+    CombineKey: String
 }, {timestampts:true})
 
 
-const tblPibDtlSpekKhusus = mongoose.model('tblPibDtlSpekKhusus', tblPibDtlSpekKhususSchema);
+const tblPibDtlSpekKhusus = mongoose.model('TblPibDtlSpekKhusus', tblPibDtlSpekKhususSchema);
 
 module.exports = tblPibDtlSpekKhusus

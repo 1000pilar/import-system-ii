@@ -1,8 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const { ObjectId } = require('mongodb');
 const Schema = mongoose.Schema;
 
 
 const tblPibDtlSchema = new Schema({
+    CombineKey: String,
     CAR: String,
     Serial: String,
     NoHs: String,
@@ -30,7 +32,12 @@ const tblPibDtlSchema = new Schema({
     DNilCuk: Number,
     JmPC: Number,
     SaldoAwalPC: Number,
-    SaldoAkhirPC: Number
+    SaldoAkhirPC: Number,
+    Commodity: String,
+    PibNo: {type:String, default: ""},
+    PibTg: {type:Date, default: null},
+    AForm_idStatus: {type: Boolean, default:false},
+    AForm_id: {type: Schema.Types.ObjectId, ref:'tblAForm', default:null}
 }, {timestampts:true})
 
 

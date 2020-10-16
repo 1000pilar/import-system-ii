@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 
 const tblAFormSchema = new Schema({
     _id: Schema.Types.ObjectId,
-    tptId: {type:ObjectId, ref:'tblTpt'},
+    tptId: {type:Schema.Types.ObjectId, ref:'tblTpt', default: null},
     alamatImportir: String,
     car: String,
     importir: String,
@@ -23,10 +23,13 @@ const tblAFormSchema = new Schema({
     seriBrg: String,
     silinder: String,
     tahun: String,
-    tglForm: String,
-    tglPib: String,
+    tglForm: Date,
+    tglPib: Date,
     tipe: String,
-    status:Boolean   
+    CombineKey: String,
+    status: {type:Boolean, default: false},
+    carRegisterNumber: {type:String, default: ""},
+    carFakturNumber: {type:String, default: ""} 
 },{timestamps: true})
 
 

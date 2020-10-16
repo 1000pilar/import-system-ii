@@ -7,7 +7,8 @@ const tblPibConRSchema = new Schema({
     ResKd: String,
     CONTNO: String,
     CONTUKUR: String,
-    CONTTIPE: String
+    CONTTIPE: String,
+    CombineKey: String
 }, {timestampts:true})
 
 

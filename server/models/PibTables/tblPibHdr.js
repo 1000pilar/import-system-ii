@@ -13,7 +13,7 @@ const tblPibHdrSchema = new Schema({
     JkWaktu: String,
     CrByr: String,
     DokTupKd: String,
-    DokTupNo: Number,
+    DokTupNo: String,
     DokTupTg: Date,
     PosNo: String,
     PosSub: String,
@@ -76,13 +76,18 @@ const tblPibHdrSchema = new Schema({
     JnsTrans: String,
     VD: String,
     VersiModul: String,
-    NilVd: String,
-    commodity: String,
-    typeOfShipment: String,
-    clearancePaymentStatus: Boolean,
-    clearancePayments: [{type: ObjectId, ref:'tblCbu4wCCPayment'}, {type: ObjectId, ref:'tblFclCCPayment'}, {type: ObjectId, ref:'tblLclCCPayment'}, {type: ObjectId, ref:'tblAirCCPayment'}],
-    remmitanceStatus: Boolean,
-    userHistory:[]
+    NilVd: Number,
+    Commodity: {type: String, default:""},
+    CommodityStatus: {type: Boolean, default: false},
+    TypeOfShipment: {type: String, default:""},
+    TypeOfShipmentStatus: {type: Boolean, default: false},
+    ClearancePaymentStatus: {type: Boolean, default: false},
+    ClearancePayments4W: {type: Schema.Types.ObjectId, ref:'tblCbu4wCCPayment', default: null},
+    ClearancePaymentsFcl: {type: Schema.Types.ObjectId, ref:'tblFclCCPayment', default: null}, 
+    ClearancePaymentsLcl: {type: Schema.Types.ObjectId, ref:'tblLclCCPayment',default: null}, 
+    ClearancetblAirCCPayment: {type: Schema.Types.ObjectId, ref:'tblAirCCPayment', default: null},
+    RemmitanceStatus: {type: Boolean, default: false},
+    UserHistory:[]
 }, {timestampts:true})
 
 //boolean clearance payment cek qty total.

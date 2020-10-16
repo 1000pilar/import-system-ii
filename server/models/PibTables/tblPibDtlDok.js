@@ -11,10 +11,11 @@ const tblPibDtlDokSchema = new Schema({
     DokNo: String,
     DokTg: Date,
     KdGroupDok: String,
-    NoSeriBrgSkep: String
+    NoSeriBrgSkep: String,
+    CombineKey: String
 }, {timestampts:true})
 
 
-const tblPibDtlDok = mongoose.model('tblPibDtlDok', tblPibDtlDokSchema);
+const tblPibDtlDok = mongoose.model('TblPibDtlDok', tblPibDtlDokSchema);
 
 module.exports = tblPibDtlDok

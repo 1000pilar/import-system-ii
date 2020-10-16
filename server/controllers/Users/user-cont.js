@@ -21,13 +21,12 @@ module.exports = {
             if(!err){
                 res.send(user)
             } else {
-                res.send({errmsg:'username exist'})
+                res.send({message:'username exist'})
             }
         })
     },
     signIn : (req, res)=>{
         var user = req.user
-        // console.log(`aku sampai disini`);
         if(user.hasOwnProperty('message')) {
           res.send(user)
         } else {
@@ -37,15 +36,13 @@ module.exports = {
             role: user.role
           },
           KeyforJson,
-          { expiresIn: '1h'
+          { expiresIn: '8h'
           }, (err, token)=>{
             if (!err){
               jwt.verify(token, KeyforJson, (err, decoded)=>{
                 if(!err) {
-                //   console.log(`aku sampai didalam`);
                   res.send({token: token, name:decoded.name, role: decoded.role, id:decoded.id})
                 } else {
-                //   console.log(`ada yang ga beres sama tokennya`);
                 }
               })
             } else {
@@ -57,7 +54,7 @@ module.exports = {
     getOneUser : (req, res)=>{
         User.findOne({username: req.params.username}, (err, user)=>{
             if(err){
-                res.send({errmsg:'username not found'})
+                res.send({message:'username not found'})
             } else{
                 res.send(user)
             }
@@ -68,14 +65,14 @@ module.exports = {
             if(!err) {
               res.send(users)
             } else {
-              res.send({errmsg:'username not found'})
+              res.send({message:'username not found'})
             }
           })
     },
     updateUser : (req, res)=>{
         User.findOneAndUpdate({username:req.params.username}, {$set:{username:req.body.username, password: bcrypt.hashSync(req.body.password, 10), role:req.body.role, }}).exec((err, user)=>{
             if(err){
-                res.send({errmsg:'update user failed'})
+                res.send({message:'update user failed'})
             } else {
                 res.send({successmsg:`username ${user.username} updated`})
             }
@@ -84,7 +81,7 @@ module.exports = {
     deleteOneUser : (req, res)=>{
         User.findOneAndRemove({username:req.params.username}, (err, user)=>{
             if(err){
-                res.send({errmsg:'username not found'})
+                res.send({message:'username not found'})
             } else {
                 res.send({successmsg:`username ${user.username} removed`})
             }
@@ -93,9 +90,9 @@ module.exports = {
     deleteAllUser : (req, res)=>{
         User.remove({}, (err)=>{
             if(!err){
-                res.send({errmsg:'All user deleted'})
+                res.send({message:'All user deleted'})
             } else{
-                res.send({errmsg:'Error during delete'})
+                res.send({message:'Error during delete'})
             }
         })
     }

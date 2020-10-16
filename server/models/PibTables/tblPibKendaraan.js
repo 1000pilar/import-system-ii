@@ -11,7 +11,7 @@ const tblPibKendaraanSchema = new Schema({
     Silinder: String,
     Tahun: String,
     FlagCbu: String,
-    policeRegId:{type:ObjectId, ref:'tblAForm'}
+    CombineKey: String
 }, {timestampts:true})
 
 

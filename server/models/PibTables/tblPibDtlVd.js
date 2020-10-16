@@ -7,7 +7,8 @@ const tblPibDtlVdSchema = new Schema({
     Serial: String,
     Jenis: String,
     Nilai: Number,
-    TgJatuhTempo: Date
+    TgJatuhTempo: Date,
+    CombineKey: String
 }, {timestampts:true})
 
 

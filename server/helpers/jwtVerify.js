@@ -25,10 +25,11 @@ module.exports = {
         res.send({message: `There is some error with your token`})
       } else {
           if(decoded.role == 'import'){
-            req.dd = decoded
+            console.log("import role")
+            req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see Import Data`})
           }
       }
     })
@@ -42,7 +43,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see Accounting Data`})
           }
       }
     })
@@ -56,7 +57,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see vendor data`})
           }
       }
     })
@@ -70,7 +71,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see homologation data`})
           }
       }
     })
@@ -84,7 +85,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see police registration data`})
           }
       }
     })
@@ -98,7 +99,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see the sales data`})
           }
       }
     })
@@ -112,7 +113,7 @@ module.exports = {
             req.decoded = decoded
             next()
           } else{
-            res.send({message: `You don't have permission to see the user`})
+            res.send({message: `You don't have permission to see Order data`})
           }
       }
     })
