@@ -142,6 +142,7 @@ function myFunction() {
       continue
     }
   }
+<<<<<<< HEAD
 
 //save for final tblHdrSet
 
@@ -229,3 +230,76 @@ var newHdr = {
             remmitanceStatus: req.body.remmitanceStatus || false,
             userHistory: req.body.userHistory || null
             }
+=======
+  
+  // Create commodity criteria with hs code filter
+  
+  - added CBU 4W HS code filter
+    870120;8702;8703;8704;8705;
+  - added CBU OBM HS code filter
+    8407.21
+  - added CBU 2W HS code filter
+    8711
+  - other (sparepart)
+  
+  //added function filter commodity trial
+  
+   function filterComodity(arraydetail){
+      var hsCode = arraydetail.NoHs;
+      var hsCode4 = hsCode.slice(0, 4)
+      var hsCode6 = hsCode.slice(0, 6)
+      if(hsCode6 == '870120' || hsCode4 == '8702' || hsCode4 == '8703' || hsCode4 == '8704' || hsCode4 == '8705'){
+        return 'CBU 4W';
+      } else if(hsCode6 == '840721'){
+        return 'CBU OBM';
+      } else if( hsCode4 == '8711'){
+        return 'CBU 2W'
+      } else {
+        return 'Sparepart)
+      }
+   }
+  
+
+
+added filed commodity check boolean & compare with commodity detail (just take index[1].commodity with CAR reference
+
+
+// just remember for countingdown tpt and other doc we can use counting down.
+  
+  <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+//for tpt please remember to considering stock by import and by sales
+>>>>>>> aad8c9cd242f3c1ef620e4d9cd6c86dd7b307204
