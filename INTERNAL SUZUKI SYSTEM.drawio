@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-08T07:07:41.696Z" agent="5.0 (Windows)" etag="x77rtsu_wSgeDzxNS5e4" version="15.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-08T07:10:41.496Z" agent="5.0 (Windows)" etag="rXvUpLw7SVjmrOg34M7L" version="15.2.9" type="github">
   <diagram id="aY8JniOhL8BUVA9mQPtz" name="Page-1">
     <mxGraphModel dx="1108" dy="369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-17" target="BwKon_WUAYNI0Dn7z-Y_-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-17" value="OTHER DATA RELATED TO IMPORT-EXPORT TO KITE" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-17" value="OTHER DATA RELATED TO KITE" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="1120" width="100" height="90" as="geometry" />
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-19" target="BwKon_WUAYNI0Dn7z-Y_-31">
@@ -24,7 +24,8 @@
             <mxPoint x="450" y="890" as="targetPoint" />
             <Array as="points">
               <mxPoint x="320" y="745" />
-              <mxPoint x="320" y="775" />
+              <mxPoint x="320" y="700" />
+              <mxPoint x="440" y="700" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -44,7 +45,8 @@
             <mxPoint x="450" y="890" as="targetPoint" />
             <Array as="points">
               <mxPoint x="320" y="650" />
-              <mxPoint x="320" y="775" />
+              <mxPoint x="320" y="700" />
+              <mxPoint x="440" y="700" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,7 +65,8 @@
             <mxPoint x="450" y="890" as="targetPoint" />
             <Array as="points">
               <mxPoint x="320" y="557" />
-              <mxPoint x="320" y="775" />
+              <mxPoint x="320" y="700" />
+              <mxPoint x="440" y="700" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -74,25 +77,14 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="450" y="890" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="320" y="940" />
-              <mxPoint x="320" y="775" />
+              <mxPoint x="220" y="850" />
+              <mxPoint x="320" y="850" />
+              <mxPoint x="320" y="700" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-25" value="NSDS-OBM-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="900" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-26" target="BwKon_WUAYNI0Dn7z-Y_-32">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="450" y="890" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="320" y="850" />
-              <mxPoint x="320" y="775" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-26" value="NSPS-SPAREPART-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="810" width="100" height="80" as="geometry" />
+          <mxGeometry x="120" y="812" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-28" target="BwKon_WUAYNI0Dn7z-Y_-33">
           <mxGeometry relative="1" as="geometry" />
@@ -113,10 +105,10 @@
           <mxGeometry x="120" y="200" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-31" value="SILO IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="190" width="110" height="100" as="geometry" />
+          <mxGeometry x="440" y="190" width="110" height="100" as="geometry" />
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-32" value="SILO EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="730" width="100" height="90" as="geometry" />
+          <mxGeometry x="440" y="655" width="100" height="90" as="geometry" />
         </mxCell>
         <mxCell id="BwKon_WUAYNI0Dn7z-Y_-33" value="SILO KITE" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="1070" width="120" height="70" as="geometry" />
