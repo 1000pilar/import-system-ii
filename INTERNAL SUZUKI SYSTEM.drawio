@@ -1,1 +1,127 @@
-<mxfile host="app.diagrams.net" modified="2021-11-08T06:30:59.502Z" agent="5.0 (Windows)" version="15.2.9" etag="bWAYaUro62fCa_kV88LH" type="github"><diagram id="aY8JniOhL8BUVA9mQPtz">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-08T07:06:56.202Z" agent="5.0 (Windows)" etag="wazihsybZrbV5gEnbwO2" version="15.2.9" type="github">
+  <diagram id="aY8JniOhL8BUVA9mQPtz" name="Page-1">
+    <mxGraphModel dx="1108" dy="369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-17" target="BwKon_WUAYNI0Dn7z-Y_-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-17" value="OTHER DATA RELATED TO IMPORT-EXPORT TO KITE" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1120" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-19" target="BwKon_WUAYNI0Dn7z-Y_-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-19" value="NSDS-CBU 2W-IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="BwKon_WUAYNI0Dn7z-Y_-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="745" as="sourcePoint" />
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="745" />
+              <mxPoint x="320" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-20" value="NSDS-CBU 2W-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="708" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-21" target="BwKon_WUAYNI0Dn7z-Y_-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-21" value="NSDS-CBU 4W-IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-22" target="BwKon_WUAYNI0Dn7z-Y_-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="650" />
+              <mxPoint x="320" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-22" value="NSDS-CBU 4W-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-23" target="BwKon_WUAYNI0Dn7z-Y_-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-23" value="NSPS-SPAREPART-IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="210" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="BwKon_WUAYNI0Dn7z-Y_-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="557" as="sourcePoint" />
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="557" />
+              <mxPoint x="320" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-24" value="NSPS-SPAREPART-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-25" target="BwKon_WUAYNI0Dn7z-Y_-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="940" />
+              <mxPoint x="320" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-25" value="NSDS-OBM-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="900" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-26" target="BwKon_WUAYNI0Dn7z-Y_-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="850" />
+              <mxPoint x="320" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-26" value="NSPS-SPAREPART-EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="810" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-28" target="BwKon_WUAYNI0Dn7z-Y_-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-28" value="NPCS-KITE-CONVERSION" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1000" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-29" target="BwKon_WUAYNI0Dn7z-Y_-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-29" value="ASN/NPCS-KOMPONEN-IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwKon_WUAYNI0Dn7z-Y_-30" target="BwKon_WUAYNI0Dn7z-Y_-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-30" value="NSDS-OBM-IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-31" value="SILO IMPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="190" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-32" value="SILO EXPORT" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="730" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BwKon_WUAYNI0Dn7z-Y_-33" value="SILO KITE" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1070" width="120" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
