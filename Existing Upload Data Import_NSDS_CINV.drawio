@@ -1,1 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2021-11-12T01:04:59.610Z" agent="5.0 (Windows)" version="15.7.0" etag="_GfoG4qCgdwv3nwlPusD" type="github"><diagram id="h0lRl23aUECnAmZVRxoX">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-12T01:24:23.184Z" agent="5.0 (Windows)" etag="jtk8a2r442y-u8VySsxc" version="15.7.0" type="github">
+  <diagram id="h0lRl23aUECnAmZVRxoX" name="Page-1">
+    <mxGraphModel dx="1108" dy="1581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.136;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yS3bzjLrTuG16rpBDf_M-3" target="yS3bzjLrTuG16rpBDf_M-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-3" value="NSDS Login" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.432;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yS3bzjLrTuG16rpBDf_M-5" target="yS3bzjLrTuG16rpBDf_M-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-5" value="CINV UPLOAD" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-6" value="NSDS CONFIRMATION" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.559;exitY=-0.017;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="yS3bzjLrTuG16rpBDf_M-7" target="yS3bzjLrTuG16rpBDf_M-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="239" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-7" value="NSDS FILE UPLOAD CONTROLLER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-8" value="ORACLE DATABASE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="385" y="340" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="yS3bzjLrTuG16rpBDf_M-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="450" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="yS3bzjLrTuG16rpBDf_M-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="240" as="sourcePoint" />
+            <mxPoint x="440" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yS3bzjLrTuG16rpBDf_M-17" value="CINV FILE " style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-20" width="170" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
