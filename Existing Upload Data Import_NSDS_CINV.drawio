@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-12T01:44:33.940Z" agent="5.0 (Windows)" etag="O-Rfh1NdrS93MkmUZhIa" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-12T01:56:46.116Z" agent="5.0 (Windows)" etag="cjvkxO-PhLgKTDo63pbm" version="15.7.0" type="github">
   <diagram id="h0lRl23aUECnAmZVRxoX" name="Page-1">
     <mxGraphModel dx="1108" dy="1581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,7 +44,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yS3bzjLrTuG16rpBDf_M-17" value="&lt;div&gt;CURRENT CONDITION&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*CINV FILE UPLOAD TO NSDS SCHEDULE DEPEND ON SUPPLIER STANDARD TIME &quot;ASKING USER ACTUAL PRACTISE&quot;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*ORACLE DATA NOT DIRECTLY INTEGRATE TO IMPORT DECLARATION DATA (PIB)&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
-          <mxGeometry x="325" y="-130" width="190" height="160" as="geometry" />
+          <mxGeometry x="190" y="-160" width="190" height="160" as="geometry" />
         </mxCell>
         <mxCell id="yS3bzjLrTuG16rpBDf_M-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -54,7 +54,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yS3bzjLrTuG16rpBDf_M-19" value="&lt;div&gt;FUTURE IMPROVEMENT&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*NEGOTIATE TO SUPPLIER TO PROVIDE DATA MAXIMUM 3 WORKING DAYS BEFORE SHIPMENT ARRIVAL DATE&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*NSDS USER MUST UPLOAD DATA MAXIMUM 2 WORKING DAYS BEFORE ARRIVAL DATE&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;* ORACLE DATA WILL BE CONSUME BY DO-IT (IMPORT SYSTEM)&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-130" width="190" height="200" as="geometry" />
+          <mxGeometry x="400" y="-160" width="190" height="200" as="geometry" />
         </mxCell>
         <mxCell id="yS3bzjLrTuG16rpBDf_M-23" value="ORACLE DATABASE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="385" y="520" width="130" height="130" as="geometry" />
