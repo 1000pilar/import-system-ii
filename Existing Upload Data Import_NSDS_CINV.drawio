@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2021-11-12T02:33:42.789Z" agent="5.0 (Windows)" etag="6IBxRDXSnUfmOg4rjmOX" version="15.7.0" type="github">
-  <diagram id="h0lRl23aUECnAmZVRxoX" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2021-11-12T02:34:52.914Z" agent="5.0 (Windows)" etag="HAm4fHOfvQfh1rDv0TPt" version="15.7.0" type="github" pages="2">
+  <diagram id="h0lRl23aUECnAmZVRxoX" name="NSDS-IMPORT">
     <mxGraphModel dx="1108" dy="1581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -56,6 +56,14 @@
         <mxCell id="yS3bzjLrTuG16rpBDf_M-19" value="&lt;div&gt;FUTURE IMPROVEMENT&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*NEGOTIATE TO SUPPLIER TO PROVIDE DATA MAXIMUM 3 WORKING DAYS BEFORE SHIPMENT ARRIVAL DATE&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;*NSDS USER MUST UPLOAD DATA MAXIMUM 2 WORKING DAYS BEFORE ARRIVAL DATE&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;* ORACLE DATA WILL BE CONSUME BY DO-IT (IMPORT SYSTEM)&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
           <mxGeometry x="400" y="-160" width="190" height="200" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="V5i-twlvrANMiozrRgjk" name="NSDS-EXPORT">
+    <mxGraphModel dx="1108" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="u0TlxpGfKJyhF6ExQj5K-0" />
+        <mxCell id="u0TlxpGfKJyhF6ExQj5K-1" parent="u0TlxpGfKJyhF6ExQj5K-0" />
       </root>
     </mxGraphModel>
   </diagram>
